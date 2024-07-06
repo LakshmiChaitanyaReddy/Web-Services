@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>cal</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+    let pathParm = request.pathParams;
+    let method = pathParm.method;
+    let qp = request.queryParams;
+    if (method == 'sum') {
+        response.setStatus(200);
+        response.setBody({
+            result: parseInt(qp.num1) + parseInt(qp.num2)
+        });
+    } else if (method == 'dif') {
+        response.setStatus(200);
+        response.setBody({
+            result: qp.num1 - qp.num2
+        });
+    } else if (method == 'mul') {
+        response.setStatus(200);
+        response.setBody({
+            result: qp.num1 * qp.num2
+        });
+    } else if (method == 'div') {
+        response.setStatus(200);
+        response.setBody({
+            result: qp.num1 / qp.num2
+        });
+    } else if (method == 'getDetails') {
+        response.setBody({
+            uri: request.uri,
+            url: request.url,
+            getSupportedResponseContentTypes: request.getSupportedResponseContentTypes(),
+            getheaders: request.headers,
+            queryString: request.queryString,
+            queryParams: request.queryParams,
+            // a:request.
+        });
+    } else if (method == 'testCustomError') {
+        var custError = new sn_ws_err.ServiceError();
+        custError.setStatus(418);
+        custError.setDetail('this is a custom error using sn_ws_err.ServiceError()');
+        custError.setMessage('custom error');
+		return custError
+
+    } else {
+        // response.setStatus(200);
+        // response.setBody({result:qp.num1 + qp.num2});
+
+        response.setError(new sn_ws_err.NotFoundError('this api supports only sum,dif,mul,div methods please try those'));
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1086374_wservice/calculator/{method}</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{method}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description>pass the method sum,diff,mul,div</short_description>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-06 07:45:59</sys_created_on>
+        <sys_id>a82780a4471f42108ab7916a216d439a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>cal</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_ws_operation_a82780a4471f42108ab7916a216d439a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-06 08:59:06</sys_updated_on>
+        <web_service_definition display_value="Calculator">eb568ce0471f42108ab7916a216d43e8</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

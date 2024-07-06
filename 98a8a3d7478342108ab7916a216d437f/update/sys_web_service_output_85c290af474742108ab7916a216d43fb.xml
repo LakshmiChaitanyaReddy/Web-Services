@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_web_service_output">
+    <sys_web_service_output action="INSERT_OR_UPDATE">
+        <name>userDetails</name>
+        <order>100</order>
+        <sys_class_name>sys_web_service_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-03 05:57:01</sys_created_on>
+        <sys_id>85c290af474742108ab7916a216d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>userDetails</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_web_service_output_85c290af474742108ab7916a216d43fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-03 05:57:01</sys_updated_on>
+        <web_service display_value="TestUserInfo">0f32d46f474742108ab7916a216d4380</web_service>
+    </sys_web_service_output>
+</record_update>

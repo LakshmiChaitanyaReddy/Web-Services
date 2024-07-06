@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>read</operation>
+        <source_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 11:19:25</sys_created_on>
+        <sys_id>2ebfab0c479702108ab7916a216d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_properties</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_scope_privilege_2ebfab0c479702108ab7916a216d4341</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 11:19:25</sys_updated_on>
+        <target_name>sys_properties</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>40863cbd1b12bddcc8432f8dee4bcbae</instance_id>
+        <instance_name>dev204127</instance_name>
+        <name>sys_scope_privilege_2ebfab0c479702108ab7916a216d4341</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-05 11:19:25</sys_created_on><sys_id>2ebfab0c479702108ab7916a216d4341</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_properties</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sys_scope_privilege_2ebfab0c479702108ab7916a216d4341</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-05 11:19:25</sys_updated_on><target_name>sys_properties</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>128535697</payload_hash>
+        <record_name>sys_properties</record_name>
+        <reverted_from/>
+        <source>40ca27db478342108ab7916a216d4329</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 11:19:25</sys_created_on>
+        <sys_id>facf6f4c479702108ab7916a216d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190829ed57f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 11:19:25</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>fecf6f4c7997021082b06c048c7c6925</update_guid>
+        <update_guid_history>fecf6f4c7997021082b06c048c7c6925:128535697</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 11:19:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>53b01128e9ab40b2ad39d567e0565ea4</sys_id>
+        <sys_metadata>2ebfab0c479702108ab7916a216d4341</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_properties</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_2ebfab0c479702108ab7916a216d4341</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_2ebfab0c479702108ab7916a216d4341">facf6f4c479702108ab7916a216d4326</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 11:19:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

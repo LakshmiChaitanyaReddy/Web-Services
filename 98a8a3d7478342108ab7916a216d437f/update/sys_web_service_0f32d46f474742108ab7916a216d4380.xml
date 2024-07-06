@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_web_service">
+    <sys_web_service action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <function_name>getUserInfo</function_name>
+        <name>TestUserInfo</name>
+        <scoped_name>x_1086374_wservice_TestUserInfo</scoped_name>
+        <script><![CDATA[(function scriptedWebServiceOperation(request, response) {
+
+    // Add your code here
+    var gr = new GlideRecord("sys_user");
+    if (request.userId && gr.get('user_name', request.userId)) {
+		response.userDetails = gr.name;
+    }
+    else{
+		var xmldoc = new XMLDocument2();
+    xmldoc.parseXML("<myResponse></myResponse>");
+    xmldoc.createElementWithTextValue("element_one", "test");  
+    xmldoc.createElementWithTextValue("element_two", "new2 value");  
+
+    var el = xmldoc.createElement("element_three");
+    xmldoc.setCurrentElement(el);  
+    xmldoc.createElementWithTextValue("newChild", "test child element");
+
+    response.soapResponseElement = xmldoc.getDocumentElement();
+		// response.setError = 'userId is incorrect or is not provided';
+		// response.setStatus(403);
+		// response.soapResponseElement = xmldoc
+	}
+
+})(request, response);]]></script>
+        <short_description/>
+        <sys_class_name>sys_web_service</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-03 05:55:49</sys_created_on>
+        <sys_id>0f32d46f474742108ab7916a216d4380</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TestUserInfo</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_web_service_0f32d46f474742108ab7916a216d4380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-03 06:26:31</sys_updated_on>
+        <wsdl>https://dev204127.service-now.com/x_1086374_wservice_TestUserInfo.do?WSDL</wsdl>
+        <wsdl_compliance>false</wsdl_compliance>
+    </sys_web_service>
+</record_update>

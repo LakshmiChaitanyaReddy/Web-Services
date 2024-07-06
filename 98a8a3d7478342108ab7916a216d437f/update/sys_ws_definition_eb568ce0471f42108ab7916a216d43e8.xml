@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_1086374_wservice/calculator</base_uri>
+        <consumes>application/json</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Calculator</name>
+        <namespace>x_1086374_wservice</namespace>
+        <produces>application/json</produces>
+        <produces_customized>true</produces_customized>
+        <service_id>calculator</service_id>
+        <short_description>Use this api for basic caluculations like addtion,sub,mul,div</short_description>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-06 07:37:05</sys_created_on>
+        <sys_id>eb568ce0471f42108ab7916a216d43e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Calculator</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_ws_definition_eb568ce0471f42108ab7916a216d43e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-06 07:38:12</sys_updated_on>
+    </sys_ws_definition>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>CreateAndGetReqInfo</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	try{
+	var res ={};
+    var cart = new sn_sc.CartJS();
+    // var item = {
+    //     "sysparm_id": "2122cefe97ae0610f99bfcdfe153afcf",
+    //     "sysparm_quantity": "1",
+    //     "variables": {
+    //         "test_variable": request.body.data.test_variable
+    //     }
+	var item = request.body.data;
+	gs.error("chaitanya-->"+JSON.stringify(request.body.data));
+    
+    cart.addToCart(item);
+    var info = cart.checkoutCart();
+	res.reqID = info.request_id;
+	var ritmGr = new GlideRecord('sc_req_item');
+	if(ritmGr.get('request',info.request_id)){
+		res.ritmID = ritmGr.getValue('sys_id');
+		var scGr = new GlideRecord('sc_task');
+		if(scGr.get('request_item',ritmGr.getValue('sys_id')))
+		res.scTaskID = scGr.getValue('sys_id');
+
+	}
+	response.setBody(res);
+	response.setStatus(200);
+	}
+	catch(err){
+		response.setError(JSON.stringify(err));
+		response.setStatus(405);
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1086374_wservice/testrequestintegration</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-03 16:22:16</sys_created_on>
+        <sys_id>38d22927470f42108ab7916a216d431f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>CreateAndGetReqInfo</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_ws_operation_38d22927470f42108ab7916a216d431f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-04 06:30:09</sys_updated_on>
+        <web_service_definition display_value="TestRequestIntegration">b5a2e127470f42108ab7916a216d43e6</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
