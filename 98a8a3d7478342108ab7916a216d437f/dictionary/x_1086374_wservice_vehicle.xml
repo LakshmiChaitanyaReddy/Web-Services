@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e0c87d6c47301210df169dbe316d432b" label="Vehicle" max_length="40" name="x_1086374_wservice_vehicle" type="collection">
+        <element display="true" label="VIN" max_length="40" name="vin" type="string"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Model" max_length="40" name="model" type="string"/>
+        <element label="Make" max_length="40" name="make" type="string"/>
+    </element>
+</database>

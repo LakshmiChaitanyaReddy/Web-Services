@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1086374_wservice.LCRScriptedRestExportUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>LCRScriptedRestExportUtils</name>
+        <script><![CDATA[var LCRScriptedRestExportUtils = Class.create();
+LCRScriptedRestExportUtils.prototype = {
+    initialize: function() {
+
+    },
+
+    domainName: 'https://{instance}.service-now.com',
+    exportRecordAPIEndPoint: this.domainName + '/api/875316/lcr_export_utils/ExportRecord',
+
+    //UI actions visibility
+    displayExportGroupUA: function() {
+        var bool = gs.hasRole('admin');
+        return bool;
+    },
+    displayUserGroupUA: function() {
+        var bool = RP.isRelatedList() && gs.hasRole('admin');
+        return bool;
+    },
+
+    /**
+     * Throws an error if provided is not a valid EncodedQuery. This is required to avoid querying whole table.
+     */
+    isNotAValidEncQuery: function(gr, encQry) {
+        if (!gr.isValidEncodedQuery(encQry)) {
+            throw {
+                message: "Not a valid EncodedQuery"
+            };
+        }
+    },
+
+    /**
+     * adds an error log in the format of script include name .name of the func errored out
+     * @param {string} funcName - function name
+     * @param {errorObject} errObj - error object from catch
+     */
+    throwError: function(funcName, errObj) {
+        var temp = this.type + '.' + funcName + '()-' + errObj.message;
+        gs.error(temp);
+        gs.addErrorMessage(temp);
+    },
+
+
+    /* Methods related Scripted Rest API*/
+
+    addUserToGroups: function(request, response) {
+        try {
+            var userID = request.pathParams.userID;
+            var groupIDs = request.body.data.groupIDs.split(',');
+
+            var gr = new GlideRecord('sys_user');
+            if (gr.get('user_name', userID)) {
+                var userSysId = gr.getValue('sys_id');
+                var grpMemGr = new GlideRecord('sys_user_grmember');
+                groupIDs.forEach(function(item) {
+                    grpMemGr.addEncodedQuery('user=' + userSysId + '^group=' + item);
+                    grpMemGr.query();
+                    if (!grpMemGr.hasNext()) {
+                        grpMemGr.newRecord();
+                        grpMemGr.user = userSysId;
+                        grpMemGr.group = item;
+                        grpMemGr.insert();
+                    }
+                });
+                response.setBody({
+                    message: 'added the user to the groups successfully'
+                });
+                response.setStatus(200);
+                response.setContentType('application/json');
+            } else {
+                response.setBody({
+                    message: 'user with provide userID not found'
+                });
+                // response.setBody(sn_ws_err.NotFoundError('user with provide userID not found'));
+                response.setStatus(404);
+                response.setContentType('application/json');
+            }
+        } catch (err) {
+            this.throwError('addUserToGroups', err);
+        }
+    },
+
+    /**
+     * check if any records exist with given encoded query
+     * @param {string} tableName
+     * @param {string} encQry
+     * @returns {boolean}
+     */
+
+    checkIfRecExist: function(tableName, encQry) {
+        try {
+            var gr = new GlideRecord(tableName);
+            gr.addEncodedQuery(encQry);
+            this.isNotAValidEncQuery(gr, encQry);
+            gr.query();
+            return gr.hasNext();
+        } catch (err) {
+            this.throwError('checkIfRecExist', err);
+        }
+    },
+
+    /**
+     * if any records exists with matchFields update action will take place else insertion takes place
+     * @param {string} tableName
+     * @param {object} obj - object of field:values of a record
+     * @return {choice} action - choice b/w 'insert' and 'update' depending upon action took place on record
+     */
+
+    createUpdateRecord: function(tableName, obj) {
+
+        try {
+            var recordExist = false;
+            //matchFields - this is like a colease field if multiple are 
+            var matchFields = this.matchingFields.hasOwnProperty(tableName) ? this.matchingFields[tableName] : this.matchingFields.Default;
+
+            var gr = new GlideRecord(tableName);
+            if (matchFields) {
+                var enqryTmp = '';
+                //forms an encodedQuery from the matchFields provided 
+                matchFields.forEach(function(item) {
+                    enqryTmp += enqryTmp ? '^' + item + '=' + obj[item] : item + '=' + obj[item];
+                });
+                recordExist = this.checkIfRecExist(tableName, enqryTmp);
+            }
+
+            //check if any record exists with same conditions if yes update the record else insert an new one
+            if (!recordExist) {
+                gr.newRecord();
+                for (i in obj) {
+                    //ignoring fields like updated,created,updated by etc.. while inserting 
+                    if (i.startsWith('sys_') && !(i == 'sys_id' || i == 'sys_domain' || i == 'sys_class_name')) {
+                        continue;
+                    } else {
+                        gr.setValue(i, obj[i]);
+                    }
+                }
+                gr.insert();
+                return 'insert';
+            } else {
+                gr.addEncodedQuery(enqryTmp);
+                gr.query();
+                if (gr.next()) {
+                    for (i in obj) {
+                        //ignoring sys_id while updating
+                        if (i.startsWith('sys_') && !(i == 'sys_domain' || i == 'sys_class_name')) {
+                            continue;
+                        } else {
+                            gr.setValue(i, obj[i]);
+                        }
+                    }
+                    gr.update();
+                }
+                return 'update';
+            }
+
+        } catch (err) {
+            this.throwError('createUpdateRecord', err);
+
+        }
+    },
+
+    importRecord: function(request, response) {
+        try {
+            var reqBody = request.body.data;
+            //matchFields help in identifying the similar records
+            for (table in reqBody) {
+
+                for (var i = 0; i < reqBody[table].length; i++) {
+                    this.createUpdateRecord(table, reqBody[table][i]);
+                }
+            }
+            if (JSON.stringify(reqBody) == '{}') {
+                response.setBody({
+                    message: 'Empty Body Received'
+                });
+                response.setStatus(400);
+                response.setContentType('application/json');
+            } else {
+                response.setStatus(200);
+                response.setBody({
+                    message: 'Exported SuccessFully'
+                });
+                response.setContentType('application/json');
+            }
+        } catch (err) {
+            this.throwError('importRecord', err);
+        }
+    },
+
+    importGroup: function(request, response) {
+        try {
+            var groupSysId = request.pathParams.group_sys_id;
+            var reqBody = request.body.data;
+            var gr = new GlideRecord('sys_user_group');
+            if (gr.get(groupSysId)) {
+                response.setStatus(200);
+                response.setContentType('application/json');
+                response.setBody({
+                    message: 'Group already exists so updated the group'
+                });
+            } else {
+                response.setContentType('application/json');
+                response.setStatus(201);
+                response.setBody({
+                    message: 'Group exported successfully'
+                });
+            }
+
+            for (table in reqBody) {
+
+                var matchFields = this.matchingFields.hasOwnProperty(table) ? this.matchingFields[table] : this.matchingFields['default'];
+
+                for (var i = 0; i < reqBody[table].length; i++) {
+                    this.createUpdateRecord(table, reqBody[table][i]);
+                }
+            }
+
+        } catch (err) {
+            this.throwError('importGroup', err);
+        }
+    },
+
+    /**
+     *  property - matchingFields
+     *  fields otherthan sysid to check if the record exists b4 creating a duplication
+     * 
+     */
+    matchingFields: {
+        Default: ['sys_id'],
+        sys_user_grmember: ['user', 'role'],
+        sys_group_has_role: ['group', 'role'],
+        sys_user_has_role: ['user', 'role']
+    },
+
+    /* Methods related Scripted Rest API End Here*/
+
+
+    /* Methods that consume above Scripted Rest API starts Here*/
+
+    /**
+     * @param {string} tableName
+     * @param {string} encQry
+     * @return {array} - array of objects where each object is record that's return from table with encQry
+     */
+    arrayOfRecordObjs: function(tableName, encQry) {
+        var arrObjs = [];
+        try {
+            var gr = new GlideRecord(tableName);
+            gr.addEncodedQuery(encQry);
+            this.isNotAValidEncQuery(gr, encQry);
+            gr.query();
+            while (gr.next()) {
+                var temObj = {};
+                this.getFields(tableName).forEach(function(item) {
+                    temObj[item] = gr.getValue(item) ? gr.getValue(item) : ''; //null values are not gettin updated
+                });
+                arrObjs.push(temObj);
+            }
+            // gs.addInfoMessage(JSON.stringify(arrObjs));
+            return arrObjs;
+        } catch (err) {
+            this.throwError('arrayOfRecordObjs', err);
+        }
+    },
+
+    /**
+     * customize this as per the instance ex atyourserviceportal-> dev1,uat and training
+     * fisclientservices ->dev,uat and training
+     */
+
+    buildInstanceAuthObj: function() {
+        var result = {};
+        if (gs.getProperty('instance_name') == 'dev227658') {
+            result.dev204127 = {
+                userName: 'dev204127.AdminSA',
+                userPassword: gs.getProperty('user.password.dev204127.AdminSA')
+            };
+        } else if (gs.getProperty('instance_name') == 'dev204127') {
+            result.dev227658 = {
+                userName: 'dev227658.AdminSA',
+                userPassword: gs.getProperty('user.password.dev227658.AdminSA')
+            };
+        }
+        return result;
+    },
+
+    /**
+     * @param {object} tableEncQryObj - object {table1:encodedquery,table2:encodedquery,etc..}
+     * @return {object} - {table1:[array of objects of records],table2:[array of objects of records]etc..} 
+     */
+
+    buildRequetBody: function(tableEncQryObj) {
+        try {
+            var reqBody = {};
+            for (i in tableEncQryObj) {
+                reqBody[i] = this.arrayOfRecordObjs(i, tableEncQryObj[i]);
+            }
+            return reqBody;
+        } catch (err) {
+            this.throwError('buildRequetBody', err);
+
+        }
+    },
+
+    /**
+     * @param {object} reqBody - requestBody that sent during the API call
+     * @param {string} endPoint- API endpoint url
+     * @param {object} instanceAuthObj - credentials inform of each instance {instance1:{userName:username,userPassword:userpassword}} userName and userPassword key names should stay as is
+     * @return {restResponseObject}
+     */
+    callTheScriptedRest: function(reqBody, endPoint, instanceAuthObj) {
+        try {
+            var result = {};
+            for (ins in instanceAuthObj) {
+                reqBody = JSON.stringify(reqBody);
+                gs.addInfoMessage(reqBody);
+                endPoint = endPoint.replace('{instance}', ins);
+                var sw = new sn_ws.RESTMessageV2();
+                sw.setEndpoint(endPoint);
+                sw.setRequestHeader('Content-Type', 'application/json');
+                sw.setRequestHeader('Accept', 'application/json');
+                sw.setBasicAuth(instanceAuthObj[ins].userName, instanceAuthObj[ins].userPassword);
+                sw.setHttpMethod('post');
+                sw.setRequestBody(reqBody);
+                var res = sw.execute();
+                result[ins] = {
+                    status: res.getStatusCode(),
+                    body: res.getBody()
+                };
+            }
+            return JSON.stringify(result);
+        } catch (err) {
+            this.throwError('callTheScriptedRest', err);
+        }
+    },
+
+    /**
+     * @param {string} tableName
+     * @return {array} - array of fields present in the table
+     */
+    getFields: function(tableName) {
+        try {
+            var gru = new GlideRecordUtil();
+            var tableGr = new GlideRecord(tableName);
+            tableGr.query();
+            if (tableGr.next()) {
+                return gru.getFields(tableGr);
+            }
+        } catch (err) {
+            this.throwError('getFields', err);
+
+        }
+    },
+
+    /**
+     * syncs the group and grmembers and roles of th group to target instances
+     * @param {GlideRecord} groupGr - group GlideRecord
+     * @param {object} instanceAuthObj - format{instanceName:{userName:username,userPassword:userpassword}}
+     * @returns {string} - stringified JOSN object with response code and responseBody from API call
+     */
+    synchGroupAndAssociated: function(groupGr, instanceAuthObj) {
+        try {
+            var groupID = groupGr.sys_id;
+            // building requestBody as per the scripted rest
+            var reqBody = this.buildRequetBody({
+                sys_user_group: 'sys_id=' + groupID,
+                sys_group_has_role: 'group=' + groupID,
+                sys_user_grmember: 'group=' + groupID
+            });
+            var endPoint = this.domainName + '/api/875316/lcr_export_utils/ExportGroup/' + groupID;
+            var result = this.callTheScriptedRest(reqBody, endPoint, instanceAuthObj);
+            gs.addInfoMessage(result);
+            return result;
+        } catch (err) {
+            this.throwError('synchGroupAndAssociated', err);
+        }
+    },
+
+    /**
+     * adds the user to same groups that the user is part of in target instances 
+     * @param {GlideRecord} userGr - user GlideRecord
+     * @param {object} instanceAuthObj - format{instanceName:{userName:username,userPassword:userpassword}}
+     * @returns {string} - stringified JOSN object with response code and responseBody from API call
+     */
+    synchGroupsOfUser: function(userGr, instanceAuthObj) {
+        try {
+            var reqBody = this.buildRequetBody({
+                sys_user_grmember: 'user=' + userGr.sys_id
+            });
+            var endPoint = this.exportRecordAPIEndPoint;
+            var result = this.callTheScriptedRest(reqBody, endPoint, instanceAuthObj);
+            gs.addInfoMessage(result);
+            return result;
+        } catch (err) {
+            this.throwError('synchGroupsOfUser', err);
+        }
+    },
+    /**
+     * adds the users to the group that they are part in current instance to target instance
+     * @param {GlideRecord} userGr - user GlideRecord
+     * @param {object} instanceAuthObj - format{instanceName:{userName:username,userPassword:userpassword}}
+     * @returns {string} - stringified JOSN object with response code and responseBody from API call
+     */
+    synchMembersOfGroup: function(groupGr, instanceAuthObj) {
+        try {
+            var reqBody = this.buildRequetBody({
+                sys_user_grmember: 'group=' + group.sys_id
+            });
+            var endPoint = this.exportRecordAPIEndPoint;
+            var result = this.callTheScriptedRest(reqBody, endPoint, instanceAuthObj);
+            gs.addInfoMessage(result);
+            return result;
+        } catch (err) {
+            this.throwError('synchMembersOfGroup', err);
+        }
+    },
+    synchRolesOfGroup: function(groupGr, instanceAuthObj) {
+        try {
+            var reqBody = this.buildRequetBody({
+                sys_group_has_role: 'group=' + group.sys_id
+            });
+            var endPoint = this.exportRecordAPIEndPoint;
+            var result = this.callTheScriptedRest(reqBody, endPoint, instanceAuthObj);
+            gs.addInfoMessage(result);
+            return result;
+        } catch (err) {
+            this.throwError('synchRolesOfGroup', err)
+        }
+    },
+    /**
+     * adds the users to the same groups that they are part of in current instance by using userID of of the user
+     * as sysID may vary from instance to instance
+     */
+    syncUserToGroupByUserID: function(userGR, instanceAuthObj) {
+        try {
+            var groupIDs = '';
+            var gr = new GlideRecord('sys_user_grmember');
+            gr.addEncodedQuery('user=' + userGR.sys_id);
+            gr.query();
+            while (gr.next()) {
+                groupIDs += groupIDs ? ',' + gr.group : gr.group;
+            }
+            var endPoint = this.domainName + '/api/875316/lcr_export_utils/addUserToGroups/' + userGR.user_name;
+            endPoint = endPoint.replaceAll(' ', '%20');
+            var result = this.callTheScriptedRest({
+                'groupIDs': groupIDs
+            }, endPoint, instanceAuthObj);
+            gs.addInfoMessage(result);
+            return result;
+        } catch (err) {
+            this.throwError('syncUserToGroupByUserID', err);
+        }
+    },
+    responseFromEachInstance: function() {
+
+    },
+    type: 'LCRScriptedRestExportUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 16:48:05</sys_created_on>
+        <sys_id>f5a310bc4774d210df169dbe316d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LCRScriptedRestExportUtils</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_script_include_f5a310bc4774d210df169dbe316d4351</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 16:48:05</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f5a310bc4774d210df169dbe316d4351</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 16:48:03</sys_created_on>
+        <sys_id>31d31cf84734d210df169dbe316d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 16:48:03</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
