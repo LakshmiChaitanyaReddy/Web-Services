@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>catalog_chaitanya</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 03:14:13</sys_created_on>
+        <sys_id>73d9fa72c3845e10051cb132b4013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chaitanya View</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_ui_view_73d9fa72c3845e10051cb132b4013122</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 03:14:13</sys_updated_on>
+        <title>Chaitanya View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

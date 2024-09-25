@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_regex">
+    <question_regex action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>16CharPassword</name>
+        <regex>^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s])\S{16,}$</regex>
+        <regex_flag/>
+        <sys_class_name>question_regex</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-31 10:29:16</sys_created_on>
+        <sys_id>15d6c522c3581290051cb132b4013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>16CharPassword</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>question_regex_15d6c522c3581290051cb132b4013156</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-31 10:29:16</sys_updated_on>
+        <validation_message>Input is not correct</validation_message>
+    </question_regex>
+    <sys_translated_text action="delete_multiple" query="documentkey=15d6c522c3581290051cb132b4013156"/>
+</record_update>

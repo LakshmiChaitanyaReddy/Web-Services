@@ -41,7 +41,7 @@
         <sys_update_name>sys_web_service_0f32d46f474742108ab7916a216d4380</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-07-03 06:26:31</sys_updated_on>
-        <wsdl>https://dev227658.service-now.com/x_1086374_wservice_TestUserInfo.do?WSDL</wsdl>
+        <wsdl>https://dev204127.service-now.com/x_1086374_wservice_TestUserInfo.do?WSDL</wsdl>
         <wsdl_compliance>false</wsdl_compliance>
     </sys_web_service>
 </record_update>
