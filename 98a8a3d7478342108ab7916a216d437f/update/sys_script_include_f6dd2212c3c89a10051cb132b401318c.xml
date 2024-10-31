@@ -6,6 +6,7 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>LCR_TranslateWithGoogle</name>
         <script><![CDATA[var LCR_TranslateWithGoogle = Class.create();
 LCR_TranslateWithGoogle.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
@@ -39,6 +40,5 @@ LCR_TranslateWithGoogle.prototype = Object.extendsObject(global.AbstractAjaxProc
         <sys_update_name>sys_script_include_f6dd2212c3c89a10051cb132b401318c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-08-18 13:53:59</sys_updated_on>
-        <u_iscreatedbyme>true</u_iscreatedbyme>
     </sys_script_include>
 </record_update>

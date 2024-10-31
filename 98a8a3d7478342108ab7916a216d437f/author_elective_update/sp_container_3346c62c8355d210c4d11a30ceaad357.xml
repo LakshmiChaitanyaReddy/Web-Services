@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color>#ff93a2</background_color>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>CR Index - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="cr_index">7c25c62c8355d210c4d11a30ceaad3fa</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 03:01:05</sys_created_on>
+        <sys_id>3346c62c8355d210c4d11a30ceaad357</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CR Index - Container 1</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sp_container_3346c62c8355d210c4d11a30ceaad357</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 03:08:12</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sp_container_3346c62c8355d210c4d11a30ceaad357</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color>#ff93a2</background_color><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CR Index - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="cr_index">7c25c62c8355d210c4d11a30ceaad3fa</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-14 03:01:05</sys_created_on><sys_id>3346c62c8355d210c4d11a30ceaad357</sys_id><sys_mod_count>3</sys_mod_count><sys_name>CR Index - Container 1</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sp_container_3346c62c8355d210c4d11a30ceaad357</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-14 03:08:12</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1294545773</payload_hash>
+        <record_name>CR Index - Container 1</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 03:08:12</sys_created_on>
+        <sys_id>c4f78ae083d5d210c4d11a30ceaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19288ff66240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 03:08:12</sys_updated_on>
+        <type>Container</type>
+        <update_guid>4cf78ae034d5d210131306188399a251</update_guid>
+        <update_guid_history>4cf78ae034d5d210131306188399a251:-1294545773,ae0702283495d2109551b873cd54cd6e:1215818303,036602a02c95d2104510662d0fce5907:-1393240481,374686602595d21074bfa14ff64e978a:-52367437</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CR Index - Container 1">3cf746a083d5d210c4d11a30ceaad3fb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 03:08:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>026b8819950e4d388005ddb3f3571590</sys_id>
+        <sys_metadata>3346c62c8355d210c4d11a30ceaad357</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CR Index - Container 1</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sp_container_3346c62c8355d210c4d11a30ceaad357</sys_update_name>
+        <sys_update_version display_value="sp_container_3346c62c8355d210c4d11a30ceaad357">c4f78ae083d5d210c4d11a30ceaad352</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 03:08:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

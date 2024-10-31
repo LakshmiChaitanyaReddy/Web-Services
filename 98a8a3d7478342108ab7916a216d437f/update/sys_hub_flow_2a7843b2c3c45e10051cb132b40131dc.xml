@@ -17,6 +17,7 @@
         <internal_name>lcr_user_access_flow</internal_name>
         <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"f9d8f5f5-a246-40ab-bae3-80df435779d8":["ritm"]},"attributes":{"default_search_field":"number"}}]</label_cache>
         <master_snapshot>d2a9cf3ac3c45e10051cb132b4013159</master_snapshot>
+        <master_snapshot_digest/>
         <name>LCR User access flow</name>
         <natlang/>
         <outputs/>
@@ -43,8 +44,9 @@
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
         <sys_update_name>sys_hub_flow_2a7843b2c3c45e10051cb132b40131dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-25 05:26:39</sys_updated_on>
+        <sys_updated_on>2024-10-31 17:02:38</sys_updated_on>
         <type>flow</type>
+        <version/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_variable_value action="delete_multiple" query="document_key=2a7843b2c3c45e10051cb132b40131dc"/>
@@ -66,26 +68,6 @@
         <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
     </sys_flow_catalog_trigger>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2a7843b2c3c45e10051cb132b40131dc"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc^sys_idNOT IN4aa9cf3ac3c45e10051cb132b401311b"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="LCR User access flow">2a7843b2c3c45e10051cb132b40131dc</flow>
-        <name>Service Catalog</name>
-        <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-20 04:23:11</sys_created_on>
-        <sys_id>4aa9cf3ac3c45e10051cb132b401311b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 04:23:13</sys_updated_on>
-        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>service_catalog</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=4aa9cf3ac3c45e10051cb132b401311b"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=2a7843b2c3c45e10051cb132b40131dc^sys_idNOT IN367843b2c3c45e10051cb132b40131dd"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -271,7 +253,28 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ea9cf3ac3c45e10051cb132b4013107"/>
     <sys_hub_flow_output action="delete_multiple" query="model=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a7843b2c3c45e10051cb132b40131dc"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc^sys_idNOT IN4aa9cf3ac3c45e10051cb132b401311b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="LCR User access flow">2a7843b2c3c45e10051cb132b40131dc</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 04:23:11</sys_created_on>
+        <sys_id>4aa9cf3ac3c45e10051cb132b401311b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 04:23:13</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4aa9cf3ac3c45e10051cb132b401311b"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc^sys_idNOT INc2a9cf3ac3c45e10051cb132b401311d"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
@@ -280,10 +283,9 @@
         <flow display_value="LCR User access flow">2a7843b2c3c45e10051cb132b40131dc</flow>
         <generation_source/>
         <inputs/>
-        <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="LCR admin access">ee9783b6c3c45e10051cb132b401318d</subflow>
+        <subflow display_value="">ee9783b6c3c45e10051cb132b401318d</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -310,19 +312,6 @@
         <value>1</value>
         <variable display_value="Wait For Completion">0ea9cf3ac3c45e10051cb132b401311e</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c2a9cf3ac3c45e10051cb132b401311d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>ritm</field>
-        <id>c2a9cf3ac3c45e10051cb132b401311d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-20 04:23:11</sys_created_on>
-        <sys_id>12a9cf3ac3c45e10051cb132b4013131</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 04:23:11</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_ee9783b6c3c45e10051cb132b401318d</table>
-        <value>{{Service Catalog_1.request_item}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c2a9cf3ac3c45e10051cb132b401311d^id=c2a9cf3ac3c45e10051cb132b401311d"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c2a9cf3ac3c45e10051cb132b401311d^sys_idNOT IN0ea9cf3ac3c45e10051cb132b401311e"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -409,7 +398,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=c2a9cf3ac3c45e10051cb132b401311d"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=2a7843b2c3c45e10051cb132b40131dc"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2a7843b2c3c45e10051cb132b40131dc^sys_idNOT IN02a9cf3ac3c45e10051cb132b4013107,42a9cf3ac3c45e10051cb132b401310c"/>
@@ -503,29 +491,10 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-08-20 04:23:11</sys_updated_on>
         <type>flow</type>
+        <version/>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_variable_value action="delete_multiple" query="document_key=d2a9cf3ac3c45e10051cb132b4013159"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159^sys_idNOT INd6a9cf3ac3c45e10051cb132b4013173"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="LCR User access flow">d2a9cf3ac3c45e10051cb132b4013159</flow>
-        <name>Service Catalog</name>
-        <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-20 04:23:12</sys_created_on>
-        <sys_id>d6a9cf3ac3c45e10051cb132b4013173</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
-        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>service_catalog</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=d6a9cf3ac3c45e10051cb132b4013173"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=d2a9cf3ac3c45e10051cb132b4013159^sys_idNOT IN52a9cf3ac3c45e10051cb132b401315a"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -711,7 +680,28 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92a9cf3ac3c45e10051cb132b4013169"/>
     <sys_hub_flow_output action="delete_multiple" query="model=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d2a9cf3ac3c45e10051cb132b4013159"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159^sys_idNOT INd6a9cf3ac3c45e10051cb132b4013173"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="LCR User access flow">d2a9cf3ac3c45e10051cb132b4013159</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 04:23:12</sys_created_on>
+        <sys_id>d6a9cf3ac3c45e10051cb132b4013173</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6a9cf3ac3c45e10051cb132b4013173"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159^sys_idNOT INa2a9cf3ac3c45e10051cb132b4013174"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
@@ -720,10 +710,9 @@
         <flow display_value="LCR User access flow">d2a9cf3ac3c45e10051cb132b4013159</flow>
         <generation_source/>
         <inputs/>
-        <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="LCR admin access">ee9783b6c3c45e10051cb132b401318d</subflow>
+        <subflow display_value="">ee9783b6c3c45e10051cb132b401318d</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -750,19 +739,6 @@
         <value>1</value>
         <variable display_value="Wait For Completion">6ea9cf3ac3c45e10051cb132b4013174</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a2a9cf3ac3c45e10051cb132b4013174"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>ritm</field>
-        <id>a2a9cf3ac3c45e10051cb132b4013174</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-20 04:23:12</sys_created_on>
-        <sys_id>aea9cf3ac3c45e10051cb132b401317f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_ee9783b6c3c45e10051cb132b401318d</table>
-        <value>{{Service Catalog_1.request_item}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_a2a9cf3ac3c45e10051cb132b4013174^id=a2a9cf3ac3c45e10051cb132b4013174"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=a2a9cf3ac3c45e10051cb132b4013174^sys_idNOT IN6ea9cf3ac3c45e10051cb132b4013174"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -849,7 +825,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a2a9cf3ac3c45e10051cb132b4013174"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=d2a9cf3ac3c45e10051cb132b4013159"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d2a9cf3ac3c45e10051cb132b4013159^sys_idNOT IN16a9cf3ac3c45e10051cb132b401316d,daa9cf3ac3c45e10051cb132b4013165"/>
@@ -870,7 +845,7 @@
         <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d2a9cf3ac3c45e10051cb132b4013159_request_item_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
         <url/>
@@ -893,7 +868,7 @@
         <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d2a9cf3ac3c45e10051cb132b4013159_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-08-20 04:23:12</sys_updated_on>
         <url/>

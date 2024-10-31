@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" db_object_id="6d61786ac3b0da50051cb132b40131dc" label="Ebonding" max_length="40" name="x_1086374_wservice_ebonding" type="collection">
-        <element display="true" label="Name" max_length="100" name="name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Direct field mapping" max_length="4000" name="direct_field_mapping" type="simple_name_values"/>
-        <element attributes="edge_encryption_enabled=true" label="Advance" max_length="40" name="advance" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Static value mapping" max_length="4000" name="static_value_mapping" type="simple_name_values"/>
         <element label="User name" max_length="40" name="user_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Type of table" max_length="40" name="type_of_table" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Table" sequence="200" value="Table"/>
                 <element inactive_on_update="false" label="Import Set" sequence="100" value="Import Set"/>
+                <element inactive_on_update="false" label="Table" sequence="200" value="Table"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Static value mapping" max_length="4000" name="static_value_mapping" type="simple_name_values"/>
-        <element label="Target instance" max_length="1024" name="target_instance" type="url"/>
         <element label="Table name" max_length="40" name="table_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Target instance" max_length="1024" name="target_instance" type="url"/>
         <element label="Password" max_length="255" name="password" type="password2"/>
+        <element attributes="edge_encryption_enabled=true" label="Direct field mapping" max_length="4000" name="direct_field_mapping" type="simple_name_values"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Advance" max_length="40" name="advance" type="boolean"/>
     </element>
 </database>

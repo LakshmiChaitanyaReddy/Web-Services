@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied>watch_list</blind_copied>
+        <body/>
+        <body_html/>
+        <condition/>
+        <content_type>text/html</content_type>
+        <copied>assigned_to, assignment_group</copied>
+        <email_client_from_address/>
+        <from/>
+        <from_generation_type/>
+        <include_attachments>false</include_attachments>
+        <name>Test incident Emial client template</name>
+        <order>90</order>
+        <recipients>caller_id</recipients>
+        <reply_to/>
+        <script_from><![CDATA[(function (fromAddressQuery, targetRecord) {
+		/**
+		 * fromAddressQuery: A GlideRecord on the table "sys_email_client_from_address". Add conditions to filter the
+		 * 		the email addresses displayed in the Email Client. 
+		 * targetRecord: A GlideRecord representing the record in which the Email Client was opened from
+		 */
+
+})(fromAddressQuery, targetRecord);]]></script_from>
+        <subject>${number} : ${short_description} - Chaitanya</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:12:59</sys_created_on>
+        <sys_id>8c23ae6947f01210df169dbe316d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test incident Emial client template</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_email_client_template_8c23ae6947f01210df169dbe316d43e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:12:59</sys_updated_on>
+        <table>incident</table>
+    </sys_email_client_template>
+</record_update>

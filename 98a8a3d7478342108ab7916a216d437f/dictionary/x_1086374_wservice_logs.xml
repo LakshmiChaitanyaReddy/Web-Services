@@ -1,5 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="dcf8275b478342108ab7916a216d43ac" label="logs" max_length="40" name="x_1086374_wservice_logs" type="collection">
+    <element db_object_id="dcf8275b478342108ab7916a216d43ac" element="collection" label="Collection" max_length="40" name="x_1086374_wservice_logs" type="collection">
+        <element label="Decimal" max_length="20" name="decimal" type="decimal"/>
+        <element label="Metric Gauge" max_length="40" name="metric_gauge" type="metric_gauge"/>
+        <element label="Source Name" max_length="40" name="source_name" type="source_name"/>
+        <element label="Data Structure" max_length="800" name="data_structure" type="data_structure"/>
+        <element label="Auto Increment" max_length="40" name="auto_increment" type="auto_increment"/>
+        <element label="Index Name" max_length="40" name="index_name" type="index_name"/>
+        <element label="Multiple Line Small Text Area" max_length="40" name="multi_small" type="multi_small"/>
+        <element label="NDS Icon" max_length="40" name="nds_icon" type="nds_icon"/>
+        <element label="Week of Month" max_length="40" name="week_of_month" type="week_of_month"/>
+        <element label="Auto Number" max_length="40" name="auto_number" type="auto_number"/>
+        <element label="Composite Field" max_length="300" name="composite_field" type="composite_field"/>
+        <element label="Conditions" max_length="4000" name="conditions" type="conditions"/>
+        <element label="Phone Number" max_length="40" name="ph_number" type="ph_number"/>
+        <element label="String boolean" max_length="40" name="string_boolean" type="string_boolean"/>
+        <element label="Domain Path" max_length="255" name="domain_path" type="domain_path"/>
+        <element label="Currency" max_length="20" name="currency" type="currency"/>
+        <element label="Metric Counter" max_length="40" name="metric_counter" type="metric_counter"/>
+        <element label="Internal Type" max_length="40" name="internal_type" type="internal_type"/>
+        <element label="Data Object" max_length="65535" name="data_object" type="data_object"/>
+        <element label="Phone Number (E164)" max_length="40" name="phone_number_e164" type="phone_number_e164"/>
+        <element label="UI Action List" max_length="4000" name="glide_action_list" type="glide_action_list"/>
+        <element label="Integer Time" max_length="40" name="integer_time" type="integer_time"/>
+        <element label="Journal Input" max_length="4000" name="journal_input" type="journal_input"/>
+        <element label="Insert Timestamp" max_length="40" name="insert_timestamp" type="insert_timestamp"/>
+        <element label="Calendar Date/Time" max_length="40" name="calendar_date_time" type="calendar_date_time"/>
+        <element label="Glide Var" max_length="40" name="glide_var" type="glide_var"/>
+        <element label="Phone Number (Unused)" max_length="40" name="phone_number" type="phone_number"/>
+        <element label="Domain ID" max_length="32" name="domain_id" type="domain_id"/>
+        <element label="User Roles" max_length="255" name="user_roles" type="user_roles"/>
+        <element label="HTML Template" max_length="65000" name="html_template" type="html_template"/>
+        <element attributes="edge_encryption_enabled=true" label="System Class path" max_length="40" name="sys_class_path" type="sys_class_path"/>
+        <element label="Tree Code" max_length="40" name="tree_code" type="tree_code"/>
+        <element label="Approval Rules" max_length="4000" name="approval_rules" type="approval_rules"/>
+        <element label="Source Table" max_length="80" name="source_table" type="source_table"/>
+        <element label="Template Value" max_length="65000" name="template_value" type="template_value"/>
+        <element label="Breakdown Element" max_length="32" name="breakdown_element" type="breakdown_element"/>
+        <element label="Table Name" max_length="80" name="table_name" type="table_name"/>
+        <element label="Workflow" max_length="80" name="workflow" type="workflow"/>
+        <element label="Data Array" max_length="65535" name="data_array" type="data_array"/>
+        <element label="Replication Payload" max_length="40" name="replication_payload" type="replication_payload"/>
+        <element label="Char" max_length="32" name="char" type="char"/>
+        <element label="Structure" max_length="40" name="structure" type="structure"/>
+        <element label="Translated" max_length="40" name="translated" type="translated"/>
+        <element label="Version" max_length="40" name="version" type="version"/>
+        <element label="Long Integer String" max_length="19" name="long" type="long"/>
+        <element label="Email" max_length="100" name="email" type="email"/>
+        <element label="Records" max_length="1024" name="records" type="records"/>
+        <element label="ICON" max_length="100" name="icon" type="icon"/>
+        <element label="Field List" max_length="4000" name="field_list" type="field_list"/>
+        <element label="Geo Point" max_length="40" name="geo_point" type="geo_point"/>
+        <element label="Field Name" max_length="80" name="field_name" type="field_name"/>
+        <element label="List" max_length="4000" name="glide_list" type="glide_list"/>
+        <element label="Month of Year" max_length="40" name="month_of_year" type="month_of_year"/>
+        <element label="Workflow Conditions" max_length="40" name="workflow_conditions" type="workflow_conditions"/>
+        <element label="Script (Plain)" max_length="8000" name="script_plain" type="script_plain"/>
+        <element label="Sys ID (GUID)" max_length="32" name="guid" type="GUID"/>
+        <element label="Properties" max_length="4000" name="properties" type="properties"/>
+        <element label="Two Line Text Area" max_length="40" name="multi_two_lines" type="multi_two_lines"/>
+        <element label="Script (server side)" max_length="4000" name="script_server" type="script_server"/>
+        <element label="Counter" max_length="40" name="counter" type="counter"/>
+        <element label="UTC Time" max_length="40" name="glide_utc_time" type="glide_utc_time"/>
+        <element label="Source ID" max_length="40" name="source_id" type="source_id"/>
+        <element label="Related Tags" max_length="40" name="related_tags" type="related_tags"/>
+        <element label="Short Field Name" max_length="40" name="short_field_name" type="short_field_name"/>
         <element attributes="edge_encryption_enabled=true" label="Message" max_length="4000" name="message" type="string"/>
+        <element label="Variable Conditions" max_length="40" name="variable_conditions" type="variable_conditions"/>
+        <element label="Slush Bucket" max_length="4000" name="slushbucket" type="slushbucket"/>
+        <element label="HTML" max_length="8000" name="html" type="html"/>
+        <element label="Translated Field" max_length="40" name="translated_field" type="translated_field"/>
+        <element label="Journal" max_length="4000" name="journal" type="journal"/>
+        <element label="Basic Time" max_length="40" name="time" type="time"/>
+        <element label="FX Currency" max_length="32" name="currency2" type="currency2"/>
+        <element label="External Names" max_length="40" name="external_names" type="external_names"/>
+        <element label="XML" max_length="40" name="xml" type="xml"/>
+        <element label="IP Address" max_length="40" name="ip_address" type="ip_address"/>
+        <element label="Precise Time" max_length="40" name="glide_precise_time" type="glide_precise_time"/>
+        <element label="Variable template value" max_length="40" name="variable_template_value" type="variable_template_value"/>
+        <element label="URL" max_length="1024" name="url" type="url"/>
+        <element label="Document ID" max_length="32" name="document_id" type="document_id"/>
+        <element label="Decoration" max_length="255" name="decoration" type="decoration"/>
+        <element label="Snapshot Template Value" max_length="40" name="snapshot_template_value" type="snapshot_template_value"/>
+        <element label="Long" max_length="19" name="longint" type="longint"/>
+        <element label="Time" max_length="40" name="glide_time" type="glide_time"/>
+        <element label="Duration" max_length="40" name="glide_duration" type="glide_duration"/>
+        <element label="Audio" max_length="40" name="audio" type="audio"/>
+        <element label="JSON" max_length="4000" name="json" type="json"/>
+        <element label="Dynamic Attribute Store" max_length="5000" name="dynamic_attribute_store" type="dynamic_attribute_store"/>
+        <element label="Formula" max_length="40" name="formula" type="formula"/>
+        <element label="Basic Date/Time" max_length="40" name="datetime" type="datetime"/>
+        <element label="Color" max_length="40" name="color" type="color"/>
+        <element label="Repeat Count" max_length="40" name="repeat_count" type="repeat_count"/>
+        <element label="File Attachment" max_length="40" name="file_attachment" type="file_attachment"/>
+        <element label="Integer Date" max_length="40" name="integer_date" type="integer_date"/>
+        <element label="String (Full UTF-8)" max_length="255" name="string_full_utf8" type="string_full_utf8"/>
+        <element label="JSON Translations" max_length="40" name="json_translations" type="json_translations"/>
+        <element label="Variables" max_length="40" name="variables" type="variables"/>
+        <element label="Metric Absolute" max_length="40" name="metric_absolute" type="metric_absolute"/>
+        <element label="WMS Job" max_length="40" name="wms_job" type="wms_job"/>
+        <element label="Glyph Icon (Bootstrap)" max_length="40" name="glyphicon" type="glyphicon"/>
+        <element label="Timer" max_length="40" name="timer" type="timer"/>
+        <element label="Compressed" max_length="40" name="compressed" type="compressed"/>
+        <element label="Name-Value Pairs" max_length="4000" name="simple_name_values" type="simple_name_values"/>
+        <element label="Price" max_length="20" name="price" type="price"/>
+        <element label="Date" max_length="40" name="glide_date" type="glide_date"/>
+        <element label="String" max_length="40" name="string" type="string"/>
+        <element label="Wiki" max_length="65536" name="wiki_text" type="wiki_text"/>
+        <element label="Day of Week" max_length="40" name="day_of_week" type="day_of_week"/>
+        <element label="IP Address (Validated IPV4, IPV6)" max_length="40" name="ip_addr" type="ip_addr"/>
+        <element label="System Rule Field Name" max_length="40" name="sysrule_field_name" type="sysrule_field_name"/>
+        <element label="Expression" max_length="40" name="expression" type="expression"/>
+        <element label="CSS" max_length="4000" name="css" type="css"/>
+        <element label="Radio Button Choice" max_length="40" name="radio" type="radio"/>
+        <element label="True/False" max_length="40" name="boolean" type="boolean"/>
+        <element label="Date/Time" max_length="40" name="glide_date_time" type="glide_date_time"/>
+        <element label="Order Index" max_length="40" name="order_index" type="order_index"/>
+        <element label="Basic Image" max_length="40" name="image" type="image"/>
+        <element label="Integer String" max_length="40" name="int" type="int"/>
+        <element label="Bootstrap color" max_length="40" name="bootstrap_color" type="bootstrap_color"/>
+        <element label="Name/Values" max_length="40" name="name_values" type="name_values"/>
+        <element label="Floating Point Number" max_length="40" name="float" type="float"/>
+        <element label="Reminder Field Name" max_length="40" name="reminder_field_name" type="reminder_field_name"/>
+        <element label="HTML Script" max_length="40" name="html_script" type="html_script"/>
+        <element label="Email Script" max_length="8000" name="email_script" type="email_script"/>
+        <element label="Password (2 Way Encrypted)" max_length="255" name="password2" type="password2"/>
+        <element label="MID Server Configuration" max_length="40" name="mid_config" type="mid_config"/>
+        <element label="Image" max_length="40" name="user_image" type="user_image"/>
+        <element label="Metric Derive" max_length="40" name="metric_derive" type="metric_derive"/>
+        <element label="GraphQL Schema" max_length="4000" name="graphql_schema" type="graphql_schema"/>
+        <element label="Documentation Field" max_length="80" name="documentation_field" type="documentation_field"/>
+        <element label="Short Table Name" max_length="40" name="short_table_name" type="short_table_name"/>
+        <element label="Integer" max_length="40" name="integer" type="integer"/>
+        <element label="Due Date" max_length="40" name="due_date" type="due_date"/>
+        <element label="Script" max_length="8000" name="script" type="script"/>
+        <element label="Video" max_length="40" name="video" type="video"/>
+        <element label="Translated Text" max_length="40" name="translated_text" type="translated_text"/>
+        <element label="Tree Path" max_length="40" name="tree_path" type="tree_path"/>
+        <element label="Repeat Type" max_length="40" name="repeat_type" type="repeat_type"/>
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:tomato;50:khaki;90:lightgreen" label="Percent Complete" max_length="15" name="percent_complete" type="percent_complete"/>
+        <element label="Condition String" max_length="40" name="condition_string" type="condition_string"/>
+        <element attributes="edge_encryption_enabled=true" label="System Class Name" max_length="40" name="sys_class_name" type="sys_class_name"/>
+        <element label="Journal List" max_length="4000" name="journal_list" type="journal_list"/>
+        <element label="Wide Text" max_length="40" name="wide_text" type="wide_text"/>
+        <element label="System Event Name" max_length="40" name="sysevent_name" type="sysevent_name"/>
+        <element label="Mask Code" max_length="40" name="mask_code" type="mask_code"/>
+        <element label="Composite Name" max_length="40" name="composite_name" type="composite_name"/>
+        <element label="Schedule Date/Time" max_length="40" name="schedule_date_time" type="schedule_date_time"/>
+        <element label="User Input" max_length="40" name="user_input" type="user_input"/>
+        <element label="Schedule interval count" max_length="40" name="schedule_interval_count" type="schedule_interval_count"/>
+        <element label="Days of Week" max_length="40" name="days_of_week" type="days_of_week"/>
+        <element label="Language" max_length="40" name="language" type="language"/>
+        <element label="Script (Client)" max_length="4000" name="script_client" type="script_client"/>
+        <element label="Translated HTML" max_length="8000" name="translated_html" type="translated_html"/>
+        <element label="NL Task Integer 1" max_length="40" name="nl_task_int1" type="nl_task_int1"/>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Date" max_length="40" name="date" type="glide_date" use_dynamic_default="true"/>
+        <element label="Catalog Preview" max_length="40" name="catalog_preview" type="catalog_preview"/>
+        <element choice="1" label="Choice" max_length="40" name="choice" type="choice">
+            <choice/>
+        </element>
+        <index name="index" unique="true">
+            <element name="auto_increment"/>
+        </index>
+        <index name="index2">
+            <element name="currency2"/>
+        </index>
+        <index name="index3">
+            <element name="document_id"/>
+        </index>
+        <index name="index4">
+            <element name="domain_id"/>
+        </index>
+        <index name="index5">
+            <element name="domain_path"/>
+        </index>
+        <index name="index6">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_path"/>
+        </index>
     </element>
 </database>

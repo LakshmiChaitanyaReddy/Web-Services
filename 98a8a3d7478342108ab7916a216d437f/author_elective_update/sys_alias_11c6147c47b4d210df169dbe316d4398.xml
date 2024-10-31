@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template display_value="Basic Auth Demo Configuration">cbdcec63b70333008321e916de11a96c</configuration_template>
+        <connection_type>sys_connection</connection_type>
+        <id>x_1086374_wservice.dev204127</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>dev204127</name>
+        <parent/>
+        <retry_policy display_value="Default SFTP Retry Policy">e385484773100010e3a71afe2ff6a709</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 17:04:17</sys_created_on>
+        <sys_id>11c6147c47b4d210df169dbe316d4398</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1086374_wservice.dev204127</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_alias_11c6147c47b4d210df169dbe316d4398</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 17:04:48</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sys_alias_11c6147c47b4d210df169dbe316d4398</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template display_value="Basic Auth Demo Configuration">cbdcec63b70333008321e916de11a96c</configuration_template><connection_type>sys_connection</connection_type><id>x_1086374_wservice.dev204127</id><is_internal>false</is_internal><multiple_connections>false</multiple_connections><name>dev204127</name><parent/><retry_policy display_value="Default SFTP Retry Policy">e385484773100010e3a71afe2ff6a709</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-19 17:04:17</sys_created_on><sys_id>11c6147c47b4d210df169dbe316d4398</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1086374_wservice.dev204127</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sys_alias_11c6147c47b4d210df169dbe316d4398</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-19 17:04:48</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-1468751030</payload_hash>
+        <record_name>x_1086374_wservice.dev204127</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 17:04:48</sys_created_on>
+        <sys_id>17a754bc47b4d210df169dbe316d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1920b3e5b580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 17:04:48</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>9ba754bcd1b4d210afc22c530ae0286e</update_guid>
+        <update_guid_history>9ba754bcd1b4d210afc22c530ae0286e:-1468751030,6597d4bc2ab4d210c9f3b262e1924f2f:2037777079,e387d4bc17b4d210983f3e0199ae5f2a:-366819506</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 17:07:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>8eb6ed9a4fcc438a9a3ffe2630026de1</sys_id>
+        <sys_metadata>11c6147c47b4d210df169dbe316d4398</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1086374_wservice.dev204127</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sys_alias_11c6147c47b4d210df169dbe316d4398</sys_update_name>
+        <sys_update_version display_value="sys_alias_11c6147c47b4d210df169dbe316d4398">17a754bc47b4d210df169dbe316d436f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 17:07:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

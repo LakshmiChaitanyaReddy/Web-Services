@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 10:57:52</sys_created_on>
+        <sys_id>8ef963b9477cd610df169dbe316d43ca</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_db_view_table_8ef963b9477cd610df169dbe316d43ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:04:45</sys_updated_on>
+        <table>sys_user</table>
+        <variable_prefix>su</variable_prefix>
+        <view display_value="x_1086374_wservice_test_db_view">b6b92f79477cd610df169dbe316d43d1</view>
+        <where_clause/>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sys_db_view_table_8ef963b9477cd610df169dbe316d43ca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-23 10:57:52</sys_created_on><sys_id>8ef963b9477cd610df169dbe316d43ca</sys_id><sys_mod_count>5</sys_mod_count><sys_name>sys_user</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sys_db_view_table_8ef963b9477cd610df169dbe316d43ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-23 11:04:45</sys_updated_on><table>sys_user</table><variable_prefix>su</variable_prefix><view display_value="x_1086374_wservice_test_db_view">b6b92f79477cd610df169dbe316d43d1</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-6050331</payload_hash>
+        <record_name>sys_user</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 11:04:45</sys_created_on>
+        <sys_id>48aba73d477cd610df169dbe316d4319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921e8e26b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:04:45</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>ccaba73df77cd61066d620b4c8ce9618</update_guid>
+        <update_guid_history>ccaba73df77cd61066d620b4c8ce9618:-6050331,ec0be33d377cd6108bb607a87792f8e4:-1271010220,3fdaeff9e67cd61074d218439163faf2:1223951634,41aa2bf9647cd6109fd6b19b12163b5d:277715489,687a2fb9837cd610e91fd4fab2454df7:-79193951,4f0ae3b9497cd610c147ebd81d140dad:-6050331</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 17:16:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>1fb3376e744b49a08680fd6b2f0994a1</sys_id>
+        <sys_metadata>8ef963b9477cd610df169dbe316d43ca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_8ef963b9477cd610df169dbe316d43ca</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_8ef963b9477cd610df169dbe316d43ca">48aba73d477cd610df169dbe316d4319</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:16:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

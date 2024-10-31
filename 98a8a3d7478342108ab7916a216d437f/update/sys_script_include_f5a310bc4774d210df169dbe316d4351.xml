@@ -6,6 +6,7 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>LCRScriptedRestExportUtils</name>
         <script><![CDATA[var LCRScriptedRestExportUtils = Class.create();
 LCRScriptedRestExportUtils.prototype = {
@@ -476,6 +477,16 @@ LCRScriptedRestExportUtils.prototype = {
         <sys_update_name>sys_script_include_f5a310bc4774d210df169dbe316d4351</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-09-19 16:48:05</sys_updated_on>
-        <u_iscreatedbyme>false</u_iscreatedbyme>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f5a310bc4774d210df169dbe316d4351</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-19 16:48:03</sys_created_on>
+        <sys_id>31d31cf84734d210df169dbe316d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-19 16:48:03</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

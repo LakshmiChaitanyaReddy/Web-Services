@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="DELETE">
+        <description/>
+        <label>Test DB view</label>
+        <name>x_1086374_wservice_test_db_view</name>
+        <plural>Test DB view</plural>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 10:57:00</sys_created_on>
+        <sys_id>b6b92f79477cd610df169dbe316d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1086374_wservice_test_db_view</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_db_view_b6b92f79477cd610df169dbe316d43d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 10:57:00</sys_updated_on>
+    </sys_db_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sys_db_view_b6b92f79477cd610df169dbe316d43d1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description/><label>Test DB view</label><name>x_1086374_wservice_test_db_view</name><plural>Test DB view</plural><sys_class_name>sys_db_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-23 10:57:00</sys_created_on><sys_id>b6b92f79477cd610df169dbe316d43d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1086374_wservice_test_db_view</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sys_db_view_b6b92f79477cd610df169dbe316d43d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-23 10:57:00</sys_updated_on></sys_db_view></record_update>]]></payload>
+        <payload_hash>-1665966471</payload_hash>
+        <record_name>x_1086374_wservice_test_db_view</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 10:57:01</sys_created_on>
+        <sys_id>b2d9ef79477cd610df169dbe316d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921e8711db0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 10:57:01</sys_updated_on>
+        <type>Database View</type>
+        <update_guid>b6d9ef79ce7cd610942fcf0e09675951</update_guid>
+        <update_guid_history>b6d9ef79ce7cd610942fcf0e09675951:-1665966471</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 17:16:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view">sys_db_view</sys_db_object>
+        <sys_id>03069297dfd04b7887eb9686f2a92d04</sys_id>
+        <sys_metadata>b6b92f79477cd610df169dbe316d43d1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1086374_wservice_test_db_view</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sys_db_view_b6b92f79477cd610df169dbe316d43d1</sys_update_name>
+        <sys_update_version display_value="sys_db_view_b6b92f79477cd610df169dbe316d43d1">b2d9ef79477cd610df169dbe316d4352</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:16:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 10:57:25</sys_created_on>
+        <sys_id>a4e923b9477cd610df169dbe316d438a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_db_view_table_a4e923b9477cd610df169dbe316d438a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:05:47</sys_updated_on>
+        <table>incident</table>
+        <variable_prefix>inc</variable_prefix>
+        <view display_value="x_1086374_wservice_test_db_view">b6b92f79477cd610df169dbe316d43d1</view>
+        <where_clause>inc_caller_id=su_sys_id</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sys_db_view_table_a4e923b9477cd610df169dbe316d438a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-23 10:57:25</sys_created_on><sys_id>a4e923b9477cd610df169dbe316d438a</sys_id><sys_mod_count>9</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>sys_db_view_table_a4e923b9477cd610df169dbe316d438a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-23 11:05:47</sys_updated_on><table>incident</table><variable_prefix>inc</variable_prefix><view display_value="x_1086374_wservice_test_db_view">b6b92f79477cd610df169dbe316d43d1</view><where_clause>inc_caller_id=su_sys_id</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-93434563</payload_hash>
+        <record_name>incident</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 11:05:47</sys_created_on>
+        <sys_id>87db673d477cd610df169dbe316d43cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921e8f18600000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:05:47</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>0fdb673d697cd61060c524d98e9f91ce</update_guid>
+        <update_guid_history>0fdb673d697cd61060c524d98e9f91ce:-93434563,34cb277d1c7cd61040d9fbe19fae02f7:-824885140,52bb277d607cd610a67f0ff2ced0b42b:-975400033,45bb6bf9f37cd610745f66dd14fe8187:1165360380,d70b673d287cd610914a4f4d4238678f:-467975700,3feae3b9bb7cd610da252869ba0a01b6:-650401990,b95aabb9107cd610c24e618a3fbb31d6:-91351095,134a6bb9e47cd6105be8fed301921c92:263474877,e31a67b96b7cd610cd9f6c2ccaf499b0:-93434563,28f963b9fb7cd610e519ab1a0371dec8:-91351095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 17:16:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>13550f3c0e654544921e28427517d990</sys_id>
+        <sys_metadata>a4e923b9477cd610df169dbe316d438a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_a4e923b9477cd610df169dbe316d438a</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_a4e923b9477cd610df169dbe316d438a">87db673d477cd610df169dbe316d43cf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:16:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

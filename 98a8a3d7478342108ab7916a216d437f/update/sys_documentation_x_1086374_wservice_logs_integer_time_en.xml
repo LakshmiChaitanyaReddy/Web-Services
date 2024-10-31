@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="integer_time" label="Integer Time" language="en" table="x_1086374_wservice_logs">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>integer_time</element>
+            <help/>
+            <hint/>
+            <label>Integer Time</label>
+            <language>en</language>
+            <name>x_1086374_wservice_logs</name>
+            <plural>Integer Times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-27 17:36:21</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Integer Time</sys_name>
+            <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+            <sys_update_name>sys_documentation_x_1086374_wservice_logs_integer_time_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-27 17:36:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

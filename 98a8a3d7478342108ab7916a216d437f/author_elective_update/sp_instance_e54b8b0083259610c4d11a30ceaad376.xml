@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>empty</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">da3b8b0483259610c4d11a30ceaad30a</sp_column>
+        <sp_widget display_value="Cool Clock">3a36b30b6f3631005be8583e6b3ee490</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 05:01:08</sys_created_on>
+        <sys_id>e54b8b0083259610c4d11a30ceaad376</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Indian Time</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sp_instance_e54b8b0083259610c4d11a30ceaad376</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 11:52:46</sys_updated_on>
+        <title>Indian Time</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"zone": {
+		"value": "IST",
+		"displayValue": "IST"
+	},
+	"c_color": {
+		"value": "brown",
+		"displayValue": "brown"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=e54b8b0083259610c4d11a30ceaad376"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>sp_instance_e54b8b0083259610c4d11a30ceaad376</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;empty&lt;/glyph&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;da3b8b0483259610c4d11a30ceaad30a&lt;/sp_column&gt;&lt;sp_widget display_value="Cool Clock"&gt;3a36b30b6f3631005be8583e6b3ee490&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-25 05:01:08&lt;/sys_created_on&gt;&lt;sys_id&gt;e54b8b0083259610c4d11a30ceaad376&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Indian Time&lt;/sys_name&gt;&lt;sys_package display_value="Web Services" source="x_1086374_wservice"&gt;98a8a3d7478342108ab7916a216d437f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Web Services"&gt;98a8a3d7478342108ab7916a216d437f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_e54b8b0083259610c4d11a30ceaad376&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-25 11:52:46&lt;/sys_updated_on&gt;&lt;title&gt;Indian Time&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"zone": {
+		"value": "IST",
+		"displayValue": "IST"
+	},
+	"c_color": {
+		"value": "brown",
+		"displayValue": "brown"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e54b8b0083259610c4d11a30ceaad376"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2115911619</payload_hash>
+        <record_name>Indian Time</record_name>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 11:52:46</sys_created_on>
+        <sys_id>df79a41883a91a10c4d11a30ceaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192c3859c640000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 11:52:46</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>5f79e05003691a10d3ac40f3928bff55</update_guid>
+        <update_guid_history>5f79e05003691a10d3ac40f3928bff55:-2115911619,6f7d87c81e6596106bd6817138887d2a:650495739,1e5dcf4803659610a67511e39905c78e:1845925589,491d07c41665961059127bcd824a1122:-648715531,c9ccc78c51259610f8da9ecea122ecfe:-1901887817,a94b8344fd259610251b6fdbe1d458b7:611406770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Indian Time">eee9205083691a10c4d11a30ceaad30d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 11:54:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>24e7cde4259c4e6487e27bfbd57cd171</sys_id>
+        <sys_metadata>e54b8b0083259610c4d11a30ceaad376</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Indian Time</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>sp_instance_e54b8b0083259610c4d11a30ceaad376</sys_update_name>
+        <sys_update_version display_value="sp_instance_e54b8b0083259610c4d11a30ceaad376">df79a41883a91a10c4d11a30ceaad346</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 11:54:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
