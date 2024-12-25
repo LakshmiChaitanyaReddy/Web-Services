@@ -9,13 +9,13 @@
         <enable_favorites>false</enable_favorites>
         <hide_portal_name>false</hide_portal_name>
         <homepage display_value="cr_index">7c25c62c8355d210c4d11a30ceaad3fa</homepage>
-        <icon/>
+        <icon>232a04aa83a15610c4d11a30ceaad3c3</icon>
         <inactive>false</inactive>
         <kb_knowledge_base/>
         <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
         <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
         <logo>bfb346e88355d210c4d11a30ceaad3a7</logo>
-        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <notfound_page display_value="cr_404">7b1193da83add210c4d11a30ceaad3a5</notfound_page>
         <quick_start_config/>
         <rtl_enabled>false</rtl_enabled>
         <sc_catalog/>
@@ -29,20 +29,59 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-14 02:45:13</sys_created_on>
         <sys_id>e0710ae48311d210c4d11a30ceaad357</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Chaitanya Reddy</sys_name>
         <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
         <sys_update_name>sp_portal_e0710ae48311d210c4d11a30ceaad357</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-25 05:06:24</sys_updated_on>
+        <sys_updated_on>2024-11-01 09:22:19</sys_updated_on>
         <theme display_value="Stock - High Contrast">f84873986711320023c82e08f585ef6a</theme>
         <title>Chaitanya Reddy</title>
         <ts_index_group/>
         <url_suffix>cr</url_suffix>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=e0710ae48311d210c4d11a30ceaad357"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#4b8f9e</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>icon</file_name>
+        <hash>6dfa0c3251939fd6d167338e0e8c1bd707f6eabf111d3caba086f24c8f0311d5</hash>
+        <image_height>15</image_height>
+        <image_width>15</image_width>
+        <size_bytes>665</size_bytes>
+        <size_compressed>688</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 09:22:18</sys_created_on>
+        <sys_id>232a04aa83a15610c4d11a30ceaad3c3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 09:22:19</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>e0710ae48311d210c4d11a30ceaad357</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="232a04aa83a15610c4d11a30ceaad3c3">232a04aa83a15610c4d11a30ceaad3c3</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 09:22:18</sys_created_on>
+        <sys_id>632a04aa83a15610c4d11a30ceaad3c3</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AZkCZv2JUE5HDQoaCgAAAA1JSERSAAAADwAAAA8IBgAAADvWlUoAAAABc1JHQgCuzhzpAAACU0lEQVQoFY3RT0gUURwH8O97s7Mzu+sm7poWKmIiGqKhRH8OQdRFihKCOmiIHRQ6GkhFhw4d8mKnghSxKEwSOhQkBF7CkMCiqIxM+7fumo7rkqsz48ybea9xSSEN7R0e78/v834/fo/gP4fa1rvLr8j7QWkdCN0XsMxmsqVt7QoGo6EOWfE3EUKzOWOgQqAoPa/5NsWtXXJWNKu7rLygsTCqQNMdfI+loM4lEeT28KY4KyfQ6c8ONx4oDqI6ImHWlPFcimBRmwFx+cBfuPresxDUnEMS4ZWJ8akaU7caJeFAMzksh8JwOPKCPuic6dzB6Bre0z9SIwjpkSipTacMWDYHgQDTTbxN6AgrYcx5j8Qm5xEyrDsve9q/ZXDVwEiVF/fUFwjtXEj8xFxMW2uF43IYX2L4ECdQKEVASz4wdH5pJSCDOZDwMjbos9qxZCLVjkxO4c1Arm0gz1wC5UQw7t5yMXHh3f1utoI3fFX+1bvX0rZ6OSQsKd9cRNheBpEVOCG1b/R6y9kVtDro6sIrW7IHT7bMHH90tL7wx+PCdFps86DXB7DyUli1Va/WYv8sMlgkTxfYg/W9xkPW7QzhYH/1cHFUNTpcWRF2RRnYju0AY582YDFZXwTGb8sLtMlJeV8y7cKMkb6hzotXrN2lN1BSAmFZb1xf5MUGjFL/NJtw4tYUE9ltgfHgeXXwY8P0Ta9awSO5T/iyEXepODd2pnJpPfYhjhKqkgp62H9CqiCfseDyveR1pptwrPdeuXVjzUfG1sPMXnw9VSx+NeT883KLw9/vjAMDyvUX/gAAAABJRU5ErkJggmiQFKuZAgAA</data>
+        <length>904</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="232a04aa83a15610c4d11a30ceaad3c3">232a04aa83a15610c4d11a30ceaad3c3</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 09:22:18</sys_created_on>
+        <sys_id>e32a04aa83a15610c4d11a30ceaad3c3</sys_id>
+    </sys_attachment_doc>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#dfe0e0</average_image_color>
         <chunk_size_bytes>700000</chunk_size_bytes>

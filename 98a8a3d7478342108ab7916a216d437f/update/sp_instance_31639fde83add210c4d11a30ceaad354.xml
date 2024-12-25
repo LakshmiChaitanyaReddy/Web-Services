@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>&#13;
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;&#13;
+}&#13;
+&#13;
+.page_404  img{ width:100%;}&#13;
+&#13;
+.four_zero_four_bg{&#13;
+ &#13;
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);&#13;
+    height: 400px;&#13;
+    background-position: center;&#13;
+ }&#13;
+ &#13;
+ &#13;
+ .four_zero_four_bg h1{&#13;
+ font-size:80px;&#13;
+ }&#13;
+ &#13;
+  .four_zero_four_bg h3{&#13;
+			 font-size:80px;&#13;
+			 }&#13;
+			 &#13;
+			 .link_404{			 &#13;
+	color: #fff!important;&#13;
+    padding: 10px 20px;&#13;
+    background: #39ac31;&#13;
+    margin: 20px 0;&#13;
+    display: inline-block;}&#13;
+	.contant_box_404{ margin-top:-50px;}</css>
+        <glyph>empty</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">5e21df9a83add210c4d11a30ceaad342</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 05:22:59</sys_created_on>
+        <sys_id>31639fde83add210c4d11a30ceaad354</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sp_instance_31639fde83add210c4d11a30ceaad354</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 07:33:23</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"></p>\r\n<p>&nbsp;</p>\r\n<p><link href=\"https://fonts.googleapis.com/css?family=Arvo\" rel=\"stylesheet\"></p>\r\n<section class=\"page_404\">\r\n<div class=\"container\">\r\n<div class=\"row\">\r\n<div class=\"col-sm-12 \">\r\n<div class=\"col-sm-10 col-sm-offset-1  text-center\">\r\n<div class=\"four_zero_four_bg\">\r\n<h1 class=\"text-center \">404</h1>\r\n</div>\r\n<div class=\"contant_box_404\">\r\n<h3 class=\"h2\">Look like you're lost</h3>\r\n<p>the page you are looking for not avaible!</p>\r\n<a class=\"link_404\">Go to Home</a></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</section>",
+		"displayValue": "<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"></p>\n<p>&nbsp;</p>\n<p><link href=\"https://fonts.googleapis.com/css?family=Arvo\" rel=\"stylesheet\"></p>\n<section class=\"page_404\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-12 \">\n<div class=\"col-sm-10 col-sm-offset-1  text-center\">\n<div class=\"four_zero_four_bg\">\n<h1 class=\"text-center \">404</h1>\n</div>\n<div class=\"contant_box_404\">\n<h3 class=\"h2\">Look like you're lost</h3>\n<p>the page you are looking for not avaible!</p>\n<a class=\"link_404\">Go to Home</a></div>\n</div>\n</div>\n</div>\n</div>\n</section>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=31639fde83add210c4d11a30ceaad354"/>
+</record_update>

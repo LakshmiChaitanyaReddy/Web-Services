@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="INSERT_OR_UPDATE">
+        <dashboard display_value="Web Services">56798a8b17ad1210ffd34b697d337878</dashboard>
+        <dashboard_tab/>
+        <layout>[{"sys_id":"d7fc8acb83215210c4d11a30ceaad35b","x":0,"y":0,"w":14,"h":6,"component_id":"1f6e0643eca7a637e36bd7833549ec9e","component_props":"{\"variant\":\"header-primary\",\"label\":\"javascript:gs.getUserName()\",\"wontWrap\":false,\"hasNoMargin\":false,\"level\":\"1\",\"id\":\"label\",\"value\":\"javascript:gs.getUserName()\",\"noDebounce\":true,\"propLabel\":\"Label\"}","can_edit":true}]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 07:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e798a8b94ad1210b6ff6fef0f63e177</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>par_dashboard_canvas_1e798a8b94ad1210b6ff6fef0f63e177</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:14:15</sys_updated_on>
+    </par_dashboard_canvas>
+</record_update>

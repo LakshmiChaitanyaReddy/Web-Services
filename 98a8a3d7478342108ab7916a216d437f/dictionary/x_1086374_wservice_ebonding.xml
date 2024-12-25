@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" db_object_id="6d61786ac3b0da50051cb132b40131dc" label="Ebonding" max_length="40" name="x_1086374_wservice_ebonding" type="collection">
+    <element attributes="update_synch=true" db_object_id="6d61786ac3b0da50051cb132b40131dc" label="Ebonding" max_length="40" name="x_1086374_wservice_ebonding" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Static value mapping" max_length="4000" name="static_value_mapping" type="simple_name_values"/>
         <element label="User name" max_length="40" name="user_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Type of table" max_length="40" name="type_of_table" type="choice">

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">c7fc4a0383215210c4d11a30ceaad395</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"Test","wontWrap":false,"hasNoMargin":false,"level":"1","id":"label","value":"Test","noDebounce":true,"propLabel":"Label"}</component_props>
+        <h>6</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:10:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c7fc8acb83215210c4d11a30ceaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>par_dashboard_widget_c7fc8acb83215210c4d11a30ceaad333</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:10:46</sys_updated_on>
+        <visualization/>
+        <w>14</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>par_dashboard_widget_c7fc8acb83215210c4d11a30ceaad333</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">c7fc4a0383215210c4d11a30ceaad395</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"Test","wontWrap":false,"hasNoMargin":false,"level":"1","id":"label","value":"Test","noDebounce":true,"propLabel":"Label"}</component_props><h>6</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-03 08:10:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c7fc8acb83215210c4d11a30ceaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>par_dashboard_widget_c7fc8acb83215210c4d11a30ceaad333</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-03 08:10:46</sys_updated_on><visualization/><w>14</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-834757557</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:10:47</sys_created_on>
+        <sys_id>cbfc8acb83215210c4d11a30ceaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192f1139b670000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:10:47</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>8ffc8acb4b2152101fb48edf0cf7c235</update_guid>
+        <update_guid_history>8ffc8acb4b2152101fb48edf0cf7c235:-834757557</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5bfc8acb83215210c4d11a30ceaad35f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:10:47</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>266b6e73a2f34fc990e2eac4e6056b19</sys_id>
+        <sys_metadata>c7fc8acb83215210c4d11a30ceaad333</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_c7fc8acb83215210c4d11a30ceaad333</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_c7fc8acb83215210c4d11a30ceaad333">cbfc8acb83215210c4d11a30ceaad336</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:10:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

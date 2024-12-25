@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>body {&#13;
+    background-color: #f8f9fa;&#13;
+    color: #343a40;&#13;
+    font-family: Arial, sans-serif;&#13;
+    display: flex;&#13;
+    justify-content: center;&#13;
+    align-items: center;&#13;
+    height: 100vh;&#13;
+    margin: 0;&#13;
+}&#13;
+&#13;
+.container {&#13;
+    text-align: center;&#13;
+    animation: fadeIn 2s ease-in-out;&#13;
+}&#13;
+&#13;
+h1 {&#13;
+    font-size: 6rem;&#13;
+    margin: 0;&#13;
+    animation: bounce 2s infinite;&#13;
+}&#13;
+&#13;
+p {&#13;
+    font-size: 1.25rem;&#13;
+    animation: fadeIn 2s ease-in-out 1s;&#13;
+}&#13;
+&#13;
+.btn {&#13;
+    display: inline-block;&#13;
+    margin-top: 20px;&#13;
+    padding: 10px 20px;&#13;
+    font-size: 1rem;&#13;
+    color: #fff;&#13;
+    background-color: #007bff;&#13;
+    text-decoration: none;&#13;
+    border-radius: 5px;&#13;
+    transition: background-color 0.3s, transform 0.3s;&#13;
+    animation: fadeIn 2s ease-in-out 1.5s;&#13;
+}&#13;
+&#13;
+.btn:hover {&#13;
+    background-color: #0056b3;&#13;
+    transform: scale(1.1);&#13;
+}&#13;
+&#13;
+@keyframes fadeIn {&#13;
+    from {&#13;
+        opacity: 0;&#13;
+    }&#13;
+    to {&#13;
+        opacity: 1;&#13;
+    }&#13;
+}&#13;
+&#13;
+@keyframes bounce {&#13;
+    0%, 20%, 50%, 80%, 100% {&#13;
+        transform: translateY(0);&#13;
+    }&#13;
+    40% {&#13;
+        transform: translateY(-30px);&#13;
+    }&#13;
+    60% {&#13;
+        transform: translateY(-15px);&#13;
+    }&#13;
+}&#13;
+</css>
+        <glyph>empty</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">3a2ad35e83611610c4d11a30ceaad36b</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 05:52:39</sys_created_on>
+        <sys_id>dc3a9fd683611610c4d11a30ceaad334</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sp_instance_dc3a9fd683611610c4d11a30ceaad334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 05:56:17</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"container\">\r\n<h1>404</h1>\r\n<p>Oops! The page you're looking for doesn't exist.</p>\r\n<a class=\"btn\" href=\"/\">Go Home</a></div>",
+		"displayValue": "<div class=\"container\">\n<h1>404</h1>\n<p>Oops! The page you're looking for doesn't exist.</p>\n<a class=\"btn\" href=\"/\">Go Home</a></div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc3a9fd683611610c4d11a30ceaad334"/>
+</record_update>

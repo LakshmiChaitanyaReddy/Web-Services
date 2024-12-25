@@ -4,7 +4,7 @@
         <background_image>fcabcb4483259610c4d11a30ceaad3ca</background_image>
         <background_style>default</background_style>
         <bootstrap_alt>false</bootstrap_alt>
-        <class_name/>
+        <class_name>hidden-xs</class_name>
         <container_class_name/>
         <name>CR Index - Container 1</name>
         <order>1</order>
@@ -15,14 +15,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-14 03:08:35</sys_created_on>
         <sys_id>65088a2483d5d210c4d11a30ceaad39c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>CR Index - Container 1</sys_name>
         <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
         <sys_update_name>sp_container_65088a2483d5d210c4d11a30ceaad39c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-25 05:02:44</sys_updated_on>
+        <sys_updated_on>2024-11-01 03:19:57</sys_updated_on>
         <title/>
         <width>container</width>
     </sp_container>

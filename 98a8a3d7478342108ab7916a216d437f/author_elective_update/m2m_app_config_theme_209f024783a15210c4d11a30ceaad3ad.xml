@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:22:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>209f024783a15210c4d11a30ceaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>m2m_app_config_theme_209f024783a15210c4d11a30ceaad3ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:22:04</sys_updated_on>
+        <theme display_value="NLU WB Theme">27ad2c8c53212110d3d5ddeeff7b1262</theme>
+        <ux_app_configuration display_value="Web Services App Config">56798a8bb1ad1210cdb90d41e17bee7e</ux_app_configuration>
+    </m2m_app_config_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>m2m_app_config_theme_209f024783a15210c4d11a30ceaad3ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme"><m2m_app_config_theme action="INSERT_OR_UPDATE"><applicability/><order>0</order><sys_class_name>m2m_app_config_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-03 08:22:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>209f024783a15210c4d11a30ceaad3ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>m2m_app_config_theme_209f024783a15210c4d11a30ceaad3ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-03 08:22:04</sys_updated_on><theme display_value="NLU WB Theme">27ad2c8c53212110d3d5ddeeff7b1262</theme><ux_app_configuration display_value="Web Services App Config">56798a8bb1ad1210cdb90d41e17bee7e</ux_app_configuration></m2m_app_config_theme></record_update>]]></payload>
+        <payload_hash>-191327758</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>af0194b547841e10df169dbe316d43d1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:22:04</sys_created_on>
+        <sys_id>209f024783a15210c4d11a30ceaad3af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192f11df0a10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:22:04</sys_updated_on>
+        <type>UX App Theme</type>
+        <update_guid>249f0247dda15210e1ecfaaedb5d5cae</update_guid>
+        <update_guid_history>249f0247dda15210e1ecfaaedb5d5cae:-191327758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f4bf464783a15210c4d11a30ceaad316</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 08:22:38</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>38dc2b35c9824a18a257b2504284da40</sys_id>
+        <sys_metadata>209f024783a15210c4d11a30ceaad3ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_209f024783a15210c4d11a30ceaad3ad</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_209f024783a15210c4d11a30ceaad3ad">209f024783a15210c4d11a30ceaad3af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 08:22:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

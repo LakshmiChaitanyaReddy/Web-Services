@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
     <sys_wizard_answer action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <answer>Test user Prompt</answer>
         <button_label/>
         <dependent_value/>
@@ -16,14 +16,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-23 10:43:50</sys_created_on>
         <sys_id>57a6e3f547f8d610df169dbe316d43db</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Test </sys_name>
         <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
         <sys_update_name>sys_wizard_answer_57a6e3f547f8d610df169dbe316d43db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-23 10:44:24</sys_updated_on>
+        <sys_updated_on>2024-12-16 16:59:04</sys_updated_on>
         <table/>
         <target_url>incident.do</target_url>
         <type>1</type>

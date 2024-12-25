@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Web Services">92798a8b00ad12103ab26955b5e79d7f</page>
+        <required_translations>[ {
+  "message" : "New Ebonding",
+  "comment" : ""
+}, {
+  "message" : "New Task",
+  "comment" : ""
+}, {
+  "message" : "New Vehicle",
+  "comment" : ""
+}, {
+  "message" : "New Vehicle import",
+  "comment" : ""
+}, {
+  "message" : "New logs",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix>chrome_tab</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-03 07:55:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>1a798a8b9bad1210ac0449764f91346f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sys_ux_page_property_1a798a8b9bad1210ac0449764f91346f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-03 07:55:32</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1086374_wservice.92798a8b00ad12103ab26955b5e79d7f.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Task"},"routeInfo":{"route":"record","fields":{"table":"task","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"task","canCreate":true}}},{"label":{"translatable":true,"message":"New logs"},"routeInfo":{"route":"record","fields":{"table":"x_1086374_wservice_logs","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1086374_wservice_logs","canCreate":true}}},{"label":{"translatable":true,"message":"New Vehicle"},"routeInfo":{"route":"record","fields":{"table":"x_1086374_wservice_vehicle","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1086374_wservice_vehicle","canCreate":true}}},{"label":{"translatable":true,"message":"New Vehicle import"},"routeInfo":{"route":"record","fields":{"table":"x_1086374_wservice_imp_vehicle","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1086374_wservice_imp_vehicle","canCreate":true}}},{"label":{"translatable":true,"message":"New Ebonding"},"routeInfo":{"route":"record","fields":{"table":"x_1086374_wservice_ebonding","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1086374_wservice_ebonding","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=1a798a8b9bad1210ac0449764f91346f"/>
+</record_update>

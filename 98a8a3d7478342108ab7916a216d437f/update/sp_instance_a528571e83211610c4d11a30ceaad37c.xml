@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');&#13;
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');&#13;
+.error-container {&#13;
+  text-align: center;&#13;
+  font-size: 106px;&#13;
+  font-family: 'Catamaran', sans-serif;&#13;
+  font-weight: 800;&#13;
+  margin: 70px 15px;&#13;
+}&#13;
+.error-container &gt; span {&#13;
+  display: inline-block;&#13;
+  position: relative;&#13;
+}&#13;
+.error-container &gt; span.four {&#13;
+  width: 136px;&#13;
+  height: 43px;&#13;
+  border-radius: 999px;&#13;
+  background:&#13;
+    linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),&#13;
+    linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),&#13;
+    linear-gradient(to right, #d89ca4, #e27b7e);&#13;
+}&#13;
+.error-container &gt; span.four:before,&#13;
+.error-container &gt; span.four:after {&#13;
+  content: '';&#13;
+  display: block;&#13;
+  position: absolute;&#13;
+  border-radius: 999px;&#13;
+}&#13;
+.error-container &gt; span.four:before {&#13;
+  width: 43px;&#13;
+  height: 156px;&#13;
+  left: 60px;&#13;
+  bottom: -43px;&#13;
+  background:&#13;
+    linear-gradient(128deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 40%, transparent 41%, transparent 100%),&#13;
+    linear-gradient(116deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 50%, transparent 51%, transparent 100%),&#13;
+    linear-gradient(to top, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);&#13;
+}&#13;
+.error-container &gt; span.four:after {&#13;
+  width: 137px;&#13;
+  height: 43px;&#13;
+  transform: rotate(-49.5deg);&#13;
+  left: -18px;&#13;
+  bottom: 36px;&#13;
+  background: linear-gradient(to right, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);&#13;
+}&#13;
+&#13;
+.error-container &gt; span.zero {&#13;
+  vertical-align: text-top;&#13;
+  width: 156px;&#13;
+  height: 156px;&#13;
+  border-radius: 999px;&#13;
+  background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%,  transparent 51%, transparent 100%),&#13;
+    linear-gradient(to top right, #99749D, #99749D, #B895AB, #CC9AA6, #D7969E, #ED8687, #ED8687);&#13;
+  overflow: hidden;&#13;
+  animation: bgshadow 5s infinite;&#13;
+}&#13;
+.error-container &gt; span.zero:before {&#13;
+  content: '';&#13;
+  display: block;&#13;
+  position: absolute;&#13;
+  transform: rotate(45deg);&#13;
+  width: 90px;&#13;
+  height: 90px;&#13;
+  background-color: transparent;&#13;
+  left: 0px;&#13;
+  bottom: 0px;&#13;
+  background:&#13;
+    linear-gradient(95deg, transparent 0%, transparent 8%, rgba(0, 0, 0, 0.07) 9%, transparent 50%, transparent 100%),&#13;
+    linear-gradient(85deg, transparent 0%, transparent 19%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.07) 91%, transparent 92%, transparent 100%);&#13;
+}&#13;
+.error-container &gt; span.zero:after {&#13;
+  content: '';&#13;
+  display: block;&#13;
+  position: absolute;&#13;
+  border-radius: 999px;&#13;
+  width: 70px;&#13;
+  height: 70px;&#13;
+  left: 43px;&#13;
+  bottom: 43px;&#13;
+  background: #FDFAF5;&#13;
+  box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.1);&#13;
+}&#13;
+&#13;
+.screen-reader-text {&#13;
+    position: absolute;&#13;
+    top: -9999em;&#13;
+    left: -9999em;&#13;
+}&#13;
+    &#13;
+@keyframes bgshadow {&#13;
+  0% {&#13;
+    box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);&#13;
+  }&#13;
+  45% {&#13;
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);&#13;
+  }&#13;
+  55% {&#13;
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);&#13;
+  }&#13;
+  100% {&#13;
+    box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);&#13;
+  }&#13;
+}&#13;
+&#13;
+/* demo stuff */&#13;
+* {&#13;
+    -webkit-box-sizing: border-box;&#13;
+    -moz-box-sizing: border-box;&#13;
+    box-sizing: border-box;&#13;
+}&#13;
+body {&#13;
+  background-color: #FDFAF5;&#13;
+  margin-bottom: 50px;&#13;
+}&#13;
+html, button, input, select, textarea {&#13;
+    font-family: 'Montserrat', Helvetica, sans-serif;&#13;
+    color: #bbb;&#13;
+}&#13;
+h1 {&#13;
+  text-align: center;&#13;
+  margin: 30px 15px;&#13;
+}&#13;
+.zoom-area { &#13;
+  max-width: 490px;&#13;
+  margin: 30px auto 30px;&#13;
+  font-size: 19px;&#13;
+  text-align: center;&#13;
+}&#13;
+.link-container {&#13;
+  text-align: center;&#13;
+}&#13;
+a.more-link {&#13;
+  text-transform: uppercase;&#13;
+  font-size: 13px;&#13;
+    background-color: #de7e85;&#13;
+    padding: 10px 15px;&#13;
+    border-radius: 0;&#13;
+    color: #fff;&#13;
+    display: inline-block;&#13;
+    margin-right: 5px;&#13;
+    margin-bottom: 5px;&#13;
+    line-height: 1.5;&#13;
+    text-decoration: none;&#13;
+  margin-top: 50px;&#13;
+  letter-spacing: 1px;&#13;
+}</css>
+        <glyph>empty</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">b6181fda83211610c4d11a30ceaad379</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 05:43:43</sys_created_on>
+        <sys_id>a528571e83211610c4d11a30ceaad37c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>sp_instance_a528571e83211610c4d11a30ceaad37c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 05:49:03</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1>Page Not Found</h1>\r\n<section class=\"error-container\"><span class=\"four\"><span class=\"screen-reader-text\">4</span></span> <span class=\"zero\"><span class=\"screen-reader-text\">0</span></span> <span class=\"four\"><span class=\"screen-reader-text\">4</span></span></section>\r\n<div class=\"link-container\"><a class=\"more-link\" href=\"cr\">Back to Homepage</a></div>",
+		"displayValue": "<h1>Page Not Found</h1>\n<section class=\"error-container\"><span class=\"four\"><span class=\"screen-reader-text\">4</span></span> <span class=\"zero\"><span class=\"screen-reader-text\">0</span></span> <span class=\"four\"><span class=\"screen-reader-text\">4</span></span></section>\n<div class=\"link-container\"><a class=\"more-link\" href=\"cr\">Back to Homepage</a></div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=a528571e83211610c4d11a30ceaad37c"/>
+</record_update>
