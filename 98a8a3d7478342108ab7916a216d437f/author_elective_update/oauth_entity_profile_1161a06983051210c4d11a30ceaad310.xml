@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>password</grant_type>
+        <jwt_provider/>
+        <name>dev204127 default_profile</name>
+        <oauth_entity display_value="dev204127">79d0e42583051210c4d11a30ceaad3c4</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:24</sys_created_on>
+        <sys_id>1161a06983051210c4d11a30ceaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dev204127 default_profile</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>oauth_entity_profile_1161a06983051210c4d11a30ceaad310</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:24</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>oauth_entity_profile_1161a06983051210c4d11a30ceaad310</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>password</grant_type><jwt_provider/><name>dev204127 default_profile</name><oauth_entity display_value="dev204127">79d0e42583051210c4d11a30ceaad3c4</oauth_entity><saml2_assertion_producer/><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-04 11:58:24</sys_created_on><sys_id>1161a06983051210c4d11a30ceaad310</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dev204127 default_profile</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>oauth_entity_profile_1161a06983051210c4d11a30ceaad310</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-04 11:58:24</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>-1656257369</payload_hash>
+        <record_name>dev204127 default_profile</record_name>
+        <reverted_from/>
+        <source>45ea6cda83a11210c4d11a30ceaad38f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 17:07:56</sys_created_on>
+        <sys_id>ae2ba0de83a11210c4d11a30ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192e38c4fef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 17:07:56</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>1d61a069ce051210c94cbf47fdec8614</update_guid>
+        <update_guid_history>1d61a069ce051210c94cbf47fdec8614:-1656257369,8ba960de5b6112103aa4682a0f8a3934:-1156573261,1d61a069ce051210c94cbf47fdec8614:-1656257369</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="dev204127 default_profile">bb3fe0ed837f5250c4d11a30ceaad30b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-18 05:51:36</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>b014c8202e8c41a19de92561300230e9</sys_id>
+        <sys_metadata>1161a06983051210c4d11a30ceaad310</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dev204127 default_profile</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_1161a06983051210c4d11a30ceaad310</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_1161a06983051210c4d11a30ceaad310">ae2ba0de83a11210c4d11a30ceaad396</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-18 05:51:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

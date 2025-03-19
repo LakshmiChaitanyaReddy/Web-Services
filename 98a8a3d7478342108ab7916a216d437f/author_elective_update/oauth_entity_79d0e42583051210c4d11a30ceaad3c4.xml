@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>1fe0a8a5ca8d9a90fc85a1bafaf43c35</client_id>
+        <client_secret>﷞﷟﷒c1ffb3bc47b70210df169dbe316d43f0﷬﷔1﷬﷭Yi0NBydwWB6rmjT-CvlryA==vvhO-giGJa55cBltBj_pSGB05saJNyC59J4=﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>f5d0e42583051210c4d11a30ceaad3c4</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>dev204127</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev227658.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:24</sys_created_on>
+        <sys_id>79d0e42583051210c4d11a30ceaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dev204127</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_update_name>oauth_entity_79d0e42583051210c4d11a30ceaad3c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:24</sys_updated_on>
+        <token_url>https://dev204127.service-now.com/oauth_token.do</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Web Services">98a8a3d7478342108ab7916a216d437f</application>
+        <file_path/>
+        <instance_id>8c46492ddb32f954199b172913961924</instance_id>
+        <instance_name>dev227658</instance_name>
+        <name>oauth_entity_79d0e42583051210c4d11a30ceaad3c4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>0</auth_code_lifespan><auth_url/><certificate_url/><client_id>1fe0a8a5ca8d9a90fc85a1bafaf43c35</client_id><client_secret>﷞﷟﷒c1ffb3bc47b70210df169dbe316d43f0﷬﷔1﷬﷭Yi0NBydwWB6rmjT-CvlryA==vvhO-giGJa55cBltBj_pSGB05saJNyC59J4=﷮﷯</client_secret><client_type/><client_uuid>f5d0e42583051210c4d11a30ceaad3c4</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>password</default_grant_type><id_token_lifespan>0</id_token_lifespan><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>0</message_signature_lifespan><mobile_client>false</mobile_client><name>dev204127</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>https://dev227658.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt>0</salt><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-04 11:58:24</sys_created_on><sys_id>79d0e42583051210c4d11a30ceaad3c4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dev204127</sys_name><sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package><sys_policy/><sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope><sys_update_name>oauth_entity_79d0e42583051210c4d11a30ceaad3c4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-04 11:58:24</sys_updated_on><token_url>https://dev204127.service-now.com/oauth_token.do</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>-453660947</payload_hash>
+        <record_name>dev204127</record_name>
+        <reverted_from/>
+        <source>45ea6cda83a11210c4d11a30ceaad38f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 17:07:56</sys_created_on>
+        <sys_id>262ba0de83a11210c4d11a30ceaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192e38c4fcf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 17:07:56</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>9161a069be051210da66c22003649717</update_guid>
+        <update_guid_history>9161a069be051210da66c22003649717:-453660947,ccc92012afa11210a606a167b4f07db0:1224444769,9161a069be051210da66c22003649717:-453660947</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="dev204127">373f60e1833f5250c4d11a30ceaad330</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-18 05:51:36</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>720eb63a6c5d453596802ef110ec2939</sys_id>
+        <sys_metadata>79d0e42583051210c4d11a30ceaad3c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dev204127</sys_name>
+        <sys_package display_value="Web Services" source="x_1086374_wservice">98a8a3d7478342108ab7916a216d437f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Web Services">98a8a3d7478342108ab7916a216d437f</sys_scope>
+        <sys_scope_delete display_value="">0b4e2c75817e45529e38e9143f1124b9</sys_scope_delete>
+        <sys_update_name>oauth_entity_79d0e42583051210c4d11a30ceaad3c4</sys_update_name>
+        <sys_update_version display_value="oauth_entity_79d0e42583051210c4d11a30ceaad3c4">262ba0de83a11210c4d11a30ceaad394</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-18 05:51:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
